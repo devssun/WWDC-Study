@@ -29,4 +29,4 @@
 - [ ] [영상 링크](), [블로그링크]()
 
 ## 1회차 (~2/26)
-- [ ] [영상 링크](), [블로그링크]()
+- [x] [Speech Recognition API](https://developer.apple.com/videos/play/wwdc2016/509/?time=175), [Speech Recognition API - WWDC2016](https://hyesunzzang.tistory.com/172)
