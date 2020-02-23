@@ -16,6 +16,21 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        SFSpeechRecognizer.requestAuthorization { (status) in
+            OperationQueue.main.addOperation {
+                switch status {
+                case .authorized:
+                    print("허용")
+                case .denied, .notDetermined, .restricted:
+                    print("거부")
+                @unknown default:
+                    fatalError("권한 요청 실패")
+                }
+            }
+        }
+    }
 }
 
