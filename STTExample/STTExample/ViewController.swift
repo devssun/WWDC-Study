@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Speech
 
 class ViewController: UIViewController {
 
