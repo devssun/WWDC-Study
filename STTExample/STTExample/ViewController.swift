@@ -10,6 +10,9 @@ import UIKit
 import Speech
 
 class ViewController: UIViewController {
+    
+    @IBOutlet fileprivate weak var textView: UITextView!
+    @IBOutlet fileprivate weak var recordingButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +34,10 @@ class ViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    @IBAction private func touchedRecordingButton(_ sender: UIButton) {
+        
     }
 }
 
