@@ -67,6 +67,12 @@ class ViewController: UIViewController {
         }
         recognitionRequest.shouldReportPartialResults = true
         
+        // 장치 인식 지원
+        if speechRecognizer.supportsOnDeviceRecognition {
+            print("장치 인식이 지원됩니다")
+            recognitionRequest.requiresOnDeviceRecognition = true
+        }
+        
         recognitionTask = speechRecognizer.recognitionTask(with: recognitionRequest, resultHandler: { (result, error) in
             var isFinal: Bool = false
             
