@@ -30,3 +30,4 @@
 
 ## 1회차 (~2/26)
 - [x] 영상 - [Speech Recognition API](https://developer.apple.com/videos/play/wwdc2016/509/?time=175), 정리글 - [Speech Recognition API 정리 - WWDC2016](https://hyesunzzang.tistory.com/172)
+- [x] 영상 - [Advances in Speech Recognition](https://developer.apple.com//wwdc2019/256/), 정리글 - [Advances in Speech Recognition 정리 - WWDC2019](https://hyesunzzang.tistory.com/173)
