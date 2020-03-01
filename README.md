@@ -26,7 +26,7 @@
 - [ ] 영상 - [영상 링크](), 정리글 - [블로그링크]()
 
 ## 2회차 (~3/4)
-- [ ] 영상 - [영상 링크](), 정리글 - [블로그링크]()
+- [x] 영상 - [Introducing SwiftUI: Building Your First App](https://developer.apple.com/videos/play/wwdc2019/204/), 정리글 - [Introducing SwiftUI: Building Your First App 정리 - WWDC2019](https://hyesunzzang.tistory.com/174)
 
 ## 1회차 (~2/26)
 - [x] 영상 - [Speech Recognition API](https://developer.apple.com/videos/play/wwdc2016/509/?time=175), 정리글 - [Speech Recognition API 정리 - WWDC2016](https://hyesunzzang.tistory.com/172)
