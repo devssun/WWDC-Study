@@ -16,11 +16,12 @@
 		4640BB3D240B80050056EE3C /* turtlerock.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4640BB3C240B80040056EE3C /* turtlerock.jpg */; };
 		4640BB3F240B80230056EE3C /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4640BB3E240B80230056EE3C /* CircleImage.swift */; };
 		4640BB41240B80AB0056EE3C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4640BB40240B80AB0056EE3C /* MapView.swift */; };
-		4640BB57240B82EB0056EE3C /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4640BB4A240B82EB0056EE3C /* landmarkData.json */; };
 		4640BB5E240B831C0056EE3C /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4640BB5D240B831C0056EE3C /* Landmark.swift */; };
 		4640BB61240B84240056EE3C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4640BB60240B84240056EE3C /* Data.swift */; };
 		4640BB63240B84B10056EE3C /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4640BB62240B84B10056EE3C /* LandmarkRow.swift */; };
 		4640BB65240B85690056EE3C /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4640BB64240B85690056EE3C /* LandmarkList.swift */; };
+		4640BB69240B89A00056EE3C /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4640BB68240B89A00056EE3C /* landmarkData.json */; };
+		4640BB6B240B8C0D0056EE3C /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4640BB6A240B8C0D0056EE3C /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,11 +36,12 @@
 		4640BB3C240B80040056EE3C /* turtlerock.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = turtlerock.jpg; path = ../../../../../Downloads/CreatingAndCombiningViews/Resources/turtlerock.jpg; sourceTree = "<group>"; };
 		4640BB3E240B80230056EE3C /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		4640BB40240B80AB0056EE3C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		4640BB4A240B82EB0056EE3C /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		4640BB5D240B831C0056EE3C /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		4640BB60240B84240056EE3C /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		4640BB62240B84B10056EE3C /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		4640BB64240B85690056EE3C /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		4640BB68240B89A00056EE3C /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = landmarkData.json; path = ../../../../../../Downloads/HandlingUserInput/StartingPoint/Landmarks/Landmarks/Resources/landmarkData.json; sourceTree = "<group>"; };
+		4640BB6A240B8C0D0056EE3C /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				4640BB60240B84240056EE3C /* Data.swift */,
 				4640BB5D240B831C0056EE3C /* Landmark.swift */,
+				4640BB6A240B8C0D0056EE3C /* UserData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,7 +113,7 @@
 		4640BB5F240B83D10056EE3C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4640BB4A240B82EB0056EE3C /* landmarkData.json */,
+				4640BB68240B89A00056EE3C /* landmarkData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -175,9 +178,9 @@
 			files = (
 				4640BB3D240B80050056EE3C /* turtlerock.jpg in Resources */,
 				4640BB35240B79F90056EE3C /* LaunchScreen.storyboard in Resources */,
-				4640BB57240B82EB0056EE3C /* landmarkData.json in Resources */,
 				4640BB32240B79F90056EE3C /* Preview Assets.xcassets in Resources */,
 				4640BB2F240B79F90056EE3C /* Assets.xcassets in Resources */,
+				4640BB69240B89A00056EE3C /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +199,7 @@
 				4640BB2B240B79F30056EE3C /* SceneDelegate.swift in Sources */,
 				4640BB2D240B79F30056EE3C /* LandmarkDetail.swift in Sources */,
 				4640BB63240B84B10056EE3C /* LandmarkRow.swift in Sources */,
+				4640BB6B240B8C0D0056EE3C /* UserData.swift in Sources */,
 				4640BB5E240B831C0056EE3C /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
