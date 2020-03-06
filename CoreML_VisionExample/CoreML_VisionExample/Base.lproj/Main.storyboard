@@ -18,7 +18,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hyE-vd-QQb">
                                 <rect key="frame" x="20" y="54" width="374" height="788"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pug" translatesAutoresizingMaskIntoConstraints="NO" id="Znm-XS-xok">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pug2" translatesAutoresizingMaskIntoConstraints="NO" id="Znm-XS-xok">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="426"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Yfl-rY-7Et">
@@ -63,6 +63,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pug" width="640" height="426"/>
+        <image name="pug2" width="640" height="426"/>
     </resources>
 </document>
