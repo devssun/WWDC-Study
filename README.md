@@ -23,7 +23,7 @@
 - [ ] 영상 - [영상 링크](), 정리글 - [블로그링크]()
 
 ## 3회차 (~3/11)
-- [ ] 영상 - [영상 링크](), 정리글 - [블로그링크]()
+- [x] 영상 - [Introducing the Create ML App](https://developer.apple.com/videos/play/wwdc2019/430/), 정리글 - [Introducing the Create ML App 정리 - WWDC2019](https://hyesunzzang.tistory.com/179)
 
 ## 2회차 (~3/4)
 - [x] 영상 - [Introducing SwiftUI: Building Your First App](https://developer.apple.com/videos/play/wwdc2019/204/), 정리글 - [Introducing SwiftUI: Building Your First App 정리 - WWDC2019](https://hyesunzzang.tistory.com/174)
