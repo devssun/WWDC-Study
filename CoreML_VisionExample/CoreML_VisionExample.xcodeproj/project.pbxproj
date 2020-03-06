@@ -13,6 +13,7 @@
 		46956DD7241224F90062A5A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46956DD5241224F90062A5A3 /* Main.storyboard */; };
 		46956DD9241224FE0062A5A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46956DD8241224FE0062A5A3 /* Assets.xcassets */; };
 		46956DDC241224FE0062A5A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46956DDA241224FE0062A5A3 /* LaunchScreen.storyboard */; };
+		46956DE4241225F80062A5A3 /* PetClassifier 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 46956DE3241225F80062A5A3 /* PetClassifier 1.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		46956DD8241224FE0062A5A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46956DDB241224FE0062A5A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46956DDD241224FE0062A5A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46956DE3241225F80062A5A3 /* PetClassifier 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "PetClassifier 1.mlmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		46956DCE241224F90062A5A3 /* CoreML_VisionExample */ = {
 			isa = PBXGroup;
 			children = (
+				46956DE3241225F80062A5A3 /* PetClassifier 1.mlmodel */,
 				46956DCF241224F90062A5A3 /* AppDelegate.swift */,
 				46956DD1241224F90062A5A3 /* SceneDelegate.swift */,
 				46956DD3241224F90062A5A3 /* ViewController.swift */,
@@ -140,6 +143,7 @@
 			files = (
 				46956DD4241224F90062A5A3 /* ViewController.swift in Sources */,
 				46956DD0241224F90062A5A3 /* AppDelegate.swift in Sources */,
+				46956DE4241225F80062A5A3 /* PetClassifier 1.mlmodel in Sources */,
 				46956DD2241224F90062A5A3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
