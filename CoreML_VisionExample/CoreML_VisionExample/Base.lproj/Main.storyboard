@@ -16,22 +16,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hyE-vd-QQb">
-                                <rect key="frame" x="20" y="54" width="374" height="788"/>
+                                <rect key="frame" x="20" y="142" width="374" height="612"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pug2" translatesAutoresizingMaskIntoConstraints="NO" id="Znm-XS-xok">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="426"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="420"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="420" id="WSB-Fh-2Bc"/>
+                                        </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Yfl-rY-7Et">
-                                        <rect key="frame" x="88" y="456" width="198" height="332"/>
+                                        <rect key="frame" x="57" y="450" width="260" height="162"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result of Classification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSe-k1-XcF">
-                                                <rect key="frame" x="0.0" y="0.0" width="198" height="151"/>
+                                                <rect key="frame" x="31" y="0.0" width="198" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lu0-0u-CPK">
+                                                <rect key="frame" x="0.0" y="64" width="260" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Pick the picture to Classification"/>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fo-cx-pfP">
-                                                <rect key="frame" x="23" y="181" width="152" height="151"/>
+                                                <rect key="frame" x="54" y="128" width="152" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="Start Classification"/>
                                             </button>
@@ -45,16 +53,15 @@
                             <constraint firstItem="hyE-vd-QQb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="JQl-H3-nnw"/>
                             <constraint firstItem="hyE-vd-QQb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="f81-a5-i8K"/>
                             <constraint firstItem="hyE-vd-QQb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lZC-DO-4B4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="hyE-vd-QQb" secondAttribute="bottom" constant="20" id="rHD-aG-PcM"/>
                             <constraint firstAttribute="trailing" secondItem="hyE-vd-QQb" secondAttribute="trailing" constant="20" symbolic="YES" id="uq5-Qa-QQo"/>
-                            <constraint firstItem="hyE-vd-QQb" firstAttribute="top" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="xcQ-EF-Kzq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="imamgeView" destination="Znm-XS-xok" id="OHB-NQ-C4M"/>
+                        <outlet property="openAlbumButton" destination="Lu0-0u-CPK" id="1tD-o3-aNb"/>
                         <outlet property="resultLabel" destination="SSe-k1-XcF" id="k0O-8z-RiP"/>
-                        <outlet property="startClassfication" destination="8fo-cx-pfP" id="sEv-dl-Rp8"/>
+                        <outlet property="startClassficationButton" destination="8fo-cx-pfP" id="sEv-dl-Rp8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -8,19 +8,33 @@
 
 import UIKit
 import Vision
+import Photos
 
 class ViewController: UIViewController {
     
     @IBOutlet fileprivate weak var imamgeView: UIImageView!
     @IBOutlet fileprivate weak var resultLabel: UILabel!
-    @IBOutlet fileprivate weak var startClassfication: UIButton!
+    @IBOutlet fileprivate weak var startClassficationButton: UIButton!
+    @IBOutlet fileprivate weak var openAlbumButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        startClassfication.addTarget(self, action: #selector(touchedStartClassfication), for: .touchUpInside)
+        startClassficationButton.addTarget(self, action: #selector(touchedStartClassfication), for: .touchUpInside)
+        openAlbumButton.addTarget(self, action: #selector(touchedOpenAlbumButton), for: .touchUpInside)
     }
 
+    /// 앨범 열기 버튼 타겟 이벤트
+    @objc private func touchedOpenAlbumButton() {
+        let albumController = UIImagePickerController()
+        albumController.sourceType = .photoLibrary
+        albumController.delegate = self
+        DispatchQueue.main.async {
+            self.present(albumController, animated: true, completion: nil)
+        }
+    }
+    
+    /// 분류 시작 버튼 타겟 이벤트ㅡ
     @objc private func touchedStartClassfication() {
         startClassification()
     }
@@ -28,10 +42,15 @@ class ViewController: UIViewController {
     /// 이미지 분류 실행
     private func startClassification() {
         resultLabel.text = "이미지 분류 중..."
-        let classificationRequest = setupVisionWithCoreMLModel()
-        let image = imamgeView.image
-        let ciimage = CIImage(image: image!)
-        runVisionRequest(ciImage: ciimage!, classificationRequest: classificationRequest!)
+        guard let classificationRequest = setupVisionWithCoreMLModel() else {
+            resultLabel.text = "요청 오류"
+            return
+        }
+        if let uiimage = imamgeView.image, let ciimage = CIImage(image: uiimage) {
+            runVisionRequest(ciImage: ciimage, classificationRequest: classificationRequest)
+        } else {
+            resultLabel.text = "요청하신 이미지가 올바르지 않습니다."
+        }
     }
     
     /// Run the Vision Request
@@ -41,7 +60,10 @@ class ViewController: UIViewController {
             do {
                 try handler.perform([classificationRequest])
             } catch {
-                print("Failed to perfoem classification. \(error.localizedDescription)")
+                print("Failed to perform classification. \(error.localizedDescription)")
+                DispatchQueue.main.async {
+                    self.resultLabel.text = "이미지 분류에 실패하였습니다."
+                }
             }
         }
     }
@@ -57,6 +79,9 @@ class ViewController: UIViewController {
             return request
         } catch {
             print(error.localizedDescription)
+            DispatchQueue.main.async {
+                self.resultLabel.text = "이미지 분류에 실패하였습니다."
+            }
             return nil
         }
     }
@@ -68,10 +93,28 @@ class ViewController: UIViewController {
                 return
             }
             
-            if let classifications = (results as? [VNClassificationObservation])?.first {
-                self.resultLabel.text = "\(Int(classifications.confidence * 100))% 확률로 \(classifications.identifier)로 확인됩니다."
+            if let bestMatchValue = (results as? [VNClassificationObservation])?.first {
+                print("결과 \(Int(bestMatchValue.confidence * 100))% 확률로 \(bestMatchValue.identifier)로 확인됩니다.")
+                self.resultLabel.text = "\(Int(bestMatchValue.confidence * 100))% 확률로 \(bestMatchValue.identifier)로 확인됩니다."
             }
         }
     }
 }
 
+extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        guard let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else {
+            picker.dismiss(animated: true, completion: nil)
+            self.resultLabel.text = "이미지 불러오기 오류"
+            return
+        }
+        
+        DispatchQueue.main.async {
+            self.imamgeView.image = image
+            picker.dismiss(animated: true, completion: {
+                self.startClassification()
+            })
+        }
+    }
+}
