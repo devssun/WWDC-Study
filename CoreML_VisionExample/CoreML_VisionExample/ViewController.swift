@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet fileprivate weak var imamgeView: UIImageView!
+    @IBOutlet fileprivate weak var resultLabel: UILabel!
+    @IBOutlet fileprivate weak var startClassfication: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
