@@ -20,7 +20,7 @@
 
 ## ✏️ Post
 ## 4회차 (~3/18)
-- [ ] 영상 - [영상 링크](), 정리글 - [블로그링크]()
+- [x] 영상 - [Building Great Shortcuts](https://developer.apple.com/videos/play/wwdc2019/805#), 정리글 - [Building Great Shortcuts 정리 - WWDC2019](https://hyesunzzang.tistory.com/181)
 
 ## 3회차 (~3/11)
 - [x] 영상 - [Introducing the Create ML App](https://developer.apple.com/videos/play/wwdc2019/430/), 정리글 - [Introducing the Create ML App 정리 - WWDC2019](https://hyesunzzang.tistory.com/179)
