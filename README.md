@@ -19,10 +19,10 @@
 - 1회 2/19 ~ 2/26 | 2회 2/27 ~ 3/4 | 3회 3/5 ~ 3/11 | 4회 3/11 ~ 3/18
 
 ## ✏️ Post
-| 카테고리 | WWDC 영상 제목 | 정리 링크 |
-|----------|----------------|--------|
-|STT|[Advances in Speech Recognition](https://developer.apple.com//wwdc2019/256/)|[200224 블로그](https://hyesunzzang.tistory.com/173)|
-|STT|[Speech Recognition API](https://developer.apple.com/videos/play/wwdc2016/509/)|[200221 블로그](https://hyesunzzang.tistory.com/172?category=626591)|
-|SwiftUI|[Introducing SwiftUI: Building Your First App](https://developer.apple.com/videos/play/wwdc2019/204/)|[200301 블로그](https://hyesunzzang.tistory.com/174)|
-|ML|[Introducing the Create ML App](https://developer.apple.com/videos/play/wwdc2019/430/)|[200306 블로그](https://hyesunzzang.tistory.com/179)|
-|Shortcuts|[Building Great Shortcuts](https://developer.apple.com/videos/play/wwdc2019/805#)|[200317 블로그](https://hyesunzzang.tistory.com/181)|
+| 카테고리 | WWDC 영상 제목 | 정리 링크 | 예제 |
+|----------|----------------|--------|--------|
+|STT|[Advances in Speech Recognition](https://developer.apple.com//wwdc2019/256/)|[200224 블로그](https://hyesunzzang.tistory.com/173)|[예제](STTExample)|
+|STT|[Speech Recognition API](https://developer.apple.com/videos/play/wwdc2016/509/)|[200221 블로그](https://hyesunzzang.tistory.com/172?category=626591)|[예제](STTExample)|
+|SwiftUI|[Introducing SwiftUI: Building Your First App](https://developer.apple.com/videos/play/wwdc2019/204/)|[200301 블로그](https://hyesunzzang.tistory.com/174)|[예제](Landmarks)|
+|ML|[Introducing the Create ML App](https://developer.apple.com/videos/play/wwdc2019/430/)|[200306 블로그](https://hyesunzzang.tistory.com/179)|[예제](CoreML_VisionExample)|
+|Shortcuts|[Building Great Shortcuts](https://developer.apple.com/videos/play/wwdc2019/805#)|[200317 블로그](https://hyesunzzang.tistory.com/181)|[예제](#)|
