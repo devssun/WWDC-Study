@@ -27,3 +27,4 @@
 |ML|[Introducing the Create ML App](https://developer.apple.com/videos/play/wwdc2019/430/)|[200306 블로그](https://hyesunzzang.tistory.com/179)|[예제](CoreML_VisionExample)|
 |Shortcuts|[Building Great Shortcuts](https://developer.apple.com/videos/play/wwdc2019/805#)|[200317 블로그](https://hyesunzzang.tistory.com/181)|[예제](#)|
 |SwiftPM|[Getting to Know Swift Package Manager](https://developer.apple.com/videos/play/wwdc2018/411/)|[200401 블로그](https://hyesunzzang.tistory.com/185)|[예제](SwiftPM)|
+|Safari|[What's New in Safari](https://developer.apple.com/videos/play/wwdc2019/515/)|[200407 블로그](https://hyesunzzang.tistory.com/187)|[예제](#)|
