@@ -17,7 +17,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         return true
     }
+    
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        print("AppDelegate - continue userActivity")
+        guard userActivity.activityType == NSUserActivityTypeBrowsingWeb, let url = userActivity.webpageURL else {
+                return false
+        }
+        
+        print("url : \(url)")
+        
+        if let components = URLComponents(url: url, resolvingAgainstBaseURL: true) {
+            let path = components.path
+            print("path : \(path)")
+        }
+        
+        guard let rootViewController = UIWindow().rootViewController else {
+            return false
+        }
+        
+        guard let viewController = rootViewController as? ViewController else {
+            return false
+        }
+        
+        viewController.URLLabel.text = url.absoluteString
+        return false
+    }
 
+    
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

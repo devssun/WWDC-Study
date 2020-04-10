@@ -19,6 +19,30 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
     }
+    
+    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
+        print("SceneDelegate - continue userActivity")
+        guard userActivity.activityType == NSUserActivityTypeBrowsingWeb, let url = userActivity.webpageURL else {
+                return
+        }
+        
+        print("url : \(url)")
+        
+        if let components = URLComponents(url: url, resolvingAgainstBaseURL: true) {
+            let path = components.path
+            print("path : \(path)")
+        }
+        
+        guard let rootViewController = self.window?.rootViewController else {
+            return
+        }
+        
+        guard let viewController = rootViewController as? ViewController else {
+            return
+        }
+        
+        viewController.URLLabel.text = url.absoluteString
+    }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
