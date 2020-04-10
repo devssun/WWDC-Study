@@ -20,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46E36519244018B500A570C5 /* UniversalLinks.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UniversalLinks.entitlements; sourceTree = "<group>"; };
 		C08BF6781C9B6C7B0048D687 /* UniversalLinks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversalLinks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C08BF67B1C9B6C7B0048D687 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C08BF6801C9B6C7B0048D687 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 		C08BF67A1C9B6C7B0048D687 /* UniversalLinks */ = {
 			isa = PBXGroup;
 			children = (
+				46E36519244018B500A570C5 /* UniversalLinks.entitlements */,
 				C08BF67B1C9B6C7B0048D687 /* AppDelegate.swift */,
 				C08BF68D1C9B6D550048D687 /* Computer.swift */,
 				C08BF68E1C9B6D550048D687 /* ComputerCell.swift */,
@@ -296,11 +298,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_ENTITLEMENTS = UniversalLinks/UniversalLinks.entitlements;
 				DEVELOPMENT_TEAM = H899557VXN;
 				INFOPLIST_FILE = UniversalLinks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.UniversalLinks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devssun.UniversalLinks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
@@ -310,11 +312,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_ENTITLEMENTS = UniversalLinks/UniversalLinks.entitlements;
 				DEVELOPMENT_TEAM = H899557VXN;
 				INFOPLIST_FILE = UniversalLinks/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.razeware.UniversalLinks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devssun.UniversalLinks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 			};
