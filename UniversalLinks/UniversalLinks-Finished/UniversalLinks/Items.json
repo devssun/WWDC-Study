@@ -1,0 +1,30 @@
+ [
+  {
+  "id" : "1",
+  "name" : "Arduino Uno",
+  "path" : "arduino.html",
+  "link" : "https://www.arduino.cc",
+  "imgLogo" : "Arduino.pdf",
+  "imgBoard" : "Arduino-Board.pdf",
+	"description" : "The Uno is a microcontroller board based on the ATmega328P. It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog inputs, a 16 MHz quartz crystal, a USB connection, a power jack, an ICSP header and a reset button. It contains everything needed to support the microcontroller; simply connect it to a computer with a USB cable or power it with a AC-to-DC adapter or battery to get started.. You can tinker with your UNO without worrying too much about doing something wrong, worst case scenario you can replace the chip for a few dollars and start over again.\n'Uno' means one in Italian and was chosen to mark the release of Arduino Software (IDE) 1.0. The Uno board and version 1.0 of Arduino Software (IDE) were the reference versions of Arduino, now evolved to newer releases. The Uno board is the first in a series of USB Arduino boards, and the reference model for the Arduino platform; for an extensive list of current, past or outdated boards see the Arduino index of boards.",
+  "vendor" : "Direct from Arduino ($24.95)"
+  },{
+  "id" : "2",
+  "name" : "Raspberry Pi",
+  "path" : "raspberrypi.html",
+  "link" : "https://www.raspberrypi.org",
+  "imgLogo" : "RaspberryPi.pdf",
+  "imgBoard" : "RaspberryPi-Board.pdf",
+	"description" : "The Raspberry Pi 2 Model B is the second generation Raspberry Pi. It replaced the original Raspberry Pi 1 Model B+ in February 2015. Compared to the Raspberry Pi 1 it has:\n - A 900MHz quad-core ARM Cortex-A7 CPU\n - 1GB RAM.\n\nLike the (Pi 1) Model B+, it also has:\n - 4 USB ports\n - 40 GPIO pins\n - Full HDMI port\n - Ethernet port\n - Combined 3.5mm audio jack and composite video\n - Camera interface (CSI)\n - Display interface (DSI)\n - Micro SD card slot\n - VideoCore IV 3D graphics core.\n\nBecause it has an ARMv7 processor, it can run the full range of ARM GNU/Linux distributions, including Snappy Ubuntu Core, as well as Microsoft Windows 10. The Raspberry Pi 2 has an identical form factor to the previous (Pi 1) Model B+ and has complete compatibility with Raspberry Pi 1.\nWe recommend the Raspberry Pi 2 Model B for use in schools: it offers more flexibility for learners than the leaner (Pi 1) Model A+, which is more useful for embedded projects and projects which require very low power.",
+  "vendor" : "Adafruit: PRODUCT ID: 2358 ($39.95)"
+  },{
+  "id" : "3",
+  "name" : "Beagle Bone Black",
+  "path" : "beaglebone.html",
+  "link" : "http://beagleboard.org/black",
+  "imgLogo" : "BeagleBoneBlack.pdf",
+  "imgBoard" : "BeagleBoneBlack-Board.pdf",
+	"description" : "BeagleBone Black is a low-cost, community-supported development platform for developers and hobbyists. Boot Linux in under 10 seconds and get started on development in less than 5 minutes with just a single USB cable.\nProcessor:\n - AM335x 1GHz ARM® Cortex-A8\n - 512MB DDR3 RAM\n - 4GB 8-bit eMMC on-board flash storage\n - 3D graphics accelerator\n - NEON floating-point accelerator\n - 2x PRU 32-bit microcontrollers\n - Connectivity\n - USB client for power & communications\n - USB host\n - Ethernet\n - HDMI\n - 2x 46 pin headers\n\nSoftware Compatibility\n - Debian\n - Android\n - Ubuntu\n - Cloud9 IDE on Node.js w/ BoneScript library\n - plus much more",
+  "vendor" : "Digikey: BB-BBLK-000-REVC-ND ($59.06)"
+  }
+  ]
