@@ -6,6 +6,10 @@
   주 1회 WWDC 영상보고 정리하기
 </div>
 
+## 🔙 History
+<details>
+<summary> Season 1 Rule </summary>
+
 ## 📌 Rule
 
 - 정해진 기간 안에 **WWDC 영상을 보고 정리글을 작성**, **README.md 파일에 글 링크를 업데이트**
@@ -17,6 +21,8 @@
 - 딱 네번만 영상보고 정리를 해봅니다
 - 벌금은 5000원 💸
 - 1회 2/19 ~ 2/26 | 2회 2/27 ~ 3/4 | 3회 3/5 ~ 3/11 | 4회 3/11 ~ 3/18
+</details>
+
 
 ## ✏️ Post ([Notion](https://www.notion.so/c3825380993e43f1bdf0d6313b30f633?v=0d342522acf74eb4acf5093cfef90fbc))
 | Topic | WWDC 영상 제목 | 정리 링크 | 예제 |
@@ -29,3 +35,4 @@
 |SwiftPM|[Getting to Know Swift Package Manager](https://developer.apple.com/videos/play/wwdc2018/411/)|[200401 블로그](https://hyesunzzang.tistory.com/185)|[예제](SwiftPM)|
 |Safari|[What's New in Safari](https://developer.apple.com/videos/play/wwdc2019/515/)|[200407 블로그](https://hyesunzzang.tistory.com/187)|~[예제](#)~|
 |App Frameworks|[Extend Your App’s Presence with Deep Linking](https://developer.apple.com/videos/play/wwdc2017/250/)|[200409 블로그](https://hyesunzzang.tistory.com/188)|[예제](UniversalLinks/UniversalLinks-Starter)|
+|App Frameworks|[What's New in Universal Links](https://developer.apple.com/videos/play/wwdc2019/717/)|[200420 블로그](https://hyesunzzang.tistory.com/190)|~[예제](#)~|
