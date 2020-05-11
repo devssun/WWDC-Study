@@ -36,3 +36,4 @@
 |Safari|[What's New in Safari](https://developer.apple.com/videos/play/wwdc2019/515/)|[200407 블로그](https://hyesunzzang.tistory.com/187)|~[예제](#)~|
 |App Frameworks|[Extend Your App’s Presence with Deep Linking](https://developer.apple.com/videos/play/wwdc2017/250/)|[200409 블로그](https://hyesunzzang.tistory.com/188)|[예제](UniversalLinks/UniversalLinks-Starter)|
 |App Frameworks|[What's New in Universal Links](https://developer.apple.com/videos/play/wwdc2019/717/)|[200420 블로그](https://hyesunzzang.tistory.com/190)|~[예제](#)~|
+|iOS|[What's New in the Apple Push Notification Service](https://developer.apple.com/videos/play/wwdc2016/724/)|[200420 블로그](https://hyesunzzang.tistory.com/195)|~[예제](#)~|
