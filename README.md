@@ -37,6 +37,5 @@
 |App Frameworks|[Extend Your App’s Presence with Deep Linking](https://developer.apple.com/videos/play/wwdc2017/250/)|[200409 블로그](https://hyesunzzang.tistory.com/188)|[예제](UniversalLinks/UniversalLinks-Starter)|
 |App Frameworks|[What's New in Universal Links](https://developer.apple.com/videos/play/wwdc2019/717/)|[200420 블로그](https://hyesunzzang.tistory.com/190)|~[예제](#)~|
 |iOS|[What's New in the Apple Push Notification Service](https://developer.apple.com/videos/play/wwdc2016/724/)|[200511 블로그](https://hyesunzzang.tistory.com/195)|~[예제](#)~|
-|Accessibility
-App Frameworks|[Creating a Great Accessible Reading Experience](https://developer.apple.com/videos/play/wwdc2019/248/)|[200514 블로그](https://hyesunzzang.tistory.com/196)|~[예제](#)~|
+|Accessibility|[Creating a Great Accessible Reading Experience](https://developer.apple.com/videos/play/wwdc2019/248/)|[200514 블로그](https://hyesunzzang.tistory.com/196)|~[예제](#)~|
 |ARKit(Tech talks)|[Face Tracking with ARKit](https://developer.apple.com/videos/play/tech-talks/601/)|[200522 블로그](https://hyesunzzang.tistory.com/198)|~[예제](#)~|
