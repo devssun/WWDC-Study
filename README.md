@@ -44,3 +44,4 @@
 |Accessibility|[Accessibility Inspector](https://developer.apple.com/videos/play/wwdc2019/257/)|[200621 블로그](https://hyesunzzang.tistory.com/204)|~[예제](#)~|
 |-|[WWDC20 Keynote](https://developer.apple.com/videos/play/wwdc2020/101/)|[200626 블로그](https://hyesunzzang.tistory.com/205)|~[예제](#)~|
 |Audio|[AVSpeechSynthesizer: Making iOS Talk](https://developer.apple.com/videos/play/wwdc2018/236/)|[200712 블로그](https://hyesunzzang.tistory.com/209)|~[예제](#)~|
+|Accessibility|[Visual Design and Accessibility](https://developer.apple.com/videos/play/wwdc2019/244/)|[200809 블로그](https://hyesunzzang.tistory.com/210)|~[예제](#)~|
