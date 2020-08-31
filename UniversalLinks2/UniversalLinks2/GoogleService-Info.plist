@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>614279846349-uf6niupgcjul55hf10q53dvkerd6li97.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.614279846349-uf6niupgcjul55hf10q53dvkerd6li97</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAbb3MfG8S1aAdsa0cc9swG1bf1BHFPV5g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>614279846349</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.dev.UniversalLinks2</string>
+	<key>PROJECT_ID</key>
+	<string>dynamictest-2047d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dynamictest-2047d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:614279846349:ios:7185eab23bd4f7c24e4c84</string>
+	<key>DATABASE_URL</key>
+	<string>https://dynamictest-2047d.firebaseio.com</string>
+</dict>
+</plist>

@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		466BD0B024FC981500318046 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 466BD0AF24FC981500318046 /* GoogleService-Info.plist */; };
 		46E36527244061F800A570C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E36526244061F800A570C5 /* AppDelegate.swift */; };
 		46E36529244061F800A570C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E36528244061F800A570C5 /* SceneDelegate.swift */; };
 		46E3652B244061F800A570C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E3652A244061F800A570C5 /* ViewController.swift */; };
 		46E3652E244061F800A570C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E3652C244061F800A570C5 /* Main.storyboard */; };
 		46E36530244061FE00A570C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E3652F244061FE00A570C5 /* Assets.xcassets */; };
 		46E36533244061FE00A570C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E36531244061FE00A570C5 /* LaunchScreen.storyboard */; };
+		DAFBB3BD6A19A155FBC2E017 /* Pods_UniversalLinks2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CC1E96DD05948F45DF13D6A /* Pods_UniversalLinks2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		466BD0AF24FC981500318046 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		46E36523244061F800A570C5 /* UniversalLinks2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniversalLinks2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E36526244061F800A570C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46E36528244061F800A570C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,6 +28,9 @@
 		46E36532244061FE00A570C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46E36534244061FE00A570C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46E3653A2440622600A570C5 /* UniversalLinks2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UniversalLinks2.entitlements; sourceTree = "<group>"; };
+		8CC1E96DD05948F45DF13D6A /* Pods_UniversalLinks2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniversalLinks2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9AC0B590E37D6A7645742A8 /* Pods-UniversalLinks2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniversalLinks2.debug.xcconfig"; path = "Target Support Files/Pods-UniversalLinks2/Pods-UniversalLinks2.debug.xcconfig"; sourceTree = "<group>"; };
+		F582908CE5CCC4196546E637 /* Pods-UniversalLinks2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UniversalLinks2.release.xcconfig"; path = "Target Support Files/Pods-UniversalLinks2/Pods-UniversalLinks2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +38,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAFBB3BD6A19A155FBC2E017 /* Pods_UniversalLinks2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		008458401E65E0AD8007162C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9AC0B590E37D6A7645742A8 /* Pods-UniversalLinks2.debug.xcconfig */,
+				F582908CE5CCC4196546E637 /* Pods-UniversalLinks2.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		46E3651A244061F800A570C5 = {
 			isa = PBXGroup;
 			children = (
 				46E36525244061F800A570C5 /* UniversalLinks2 */,
 				46E36524244061F800A570C5 /* Products */,
+				008458401E65E0AD8007162C /* Pods */,
+				84DD2113B84F34CAF4B6AD64 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +76,7 @@
 		46E36525244061F800A570C5 /* UniversalLinks2 */ = {
 			isa = PBXGroup;
 			children = (
+				466BD0AF24FC981500318046 /* GoogleService-Info.plist */,
 				46E3653A2440622600A570C5 /* UniversalLinks2.entitlements */,
 				46E36526244061F800A570C5 /* AppDelegate.swift */,
 				46E36528244061F800A570C5 /* SceneDelegate.swift */,
@@ -69,6 +89,14 @@
 			path = UniversalLinks2;
 			sourceTree = "<group>";
 		};
+		84DD2113B84F34CAF4B6AD64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CC1E96DD05948F45DF13D6A /* Pods_UniversalLinks2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46E36537244061FE00A570C5 /* Build configuration list for PBXNativeTarget "UniversalLinks2" */;
 			buildPhases = (
+				F30078E1093695A8983E4A08 /* [CP] Check Pods Manifest.lock */,
 				46E3651F244061F800A570C5 /* Sources */,
 				46E36520244061F800A570C5 /* Frameworks */,
 				46E36521244061F800A570C5 /* Resources */,
+				1CB8C10BD569A0618585427B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,12 +158,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				46E36533244061FE00A570C5 /* LaunchScreen.storyboard in Resources */,
+				466BD0B024FC981500318046 /* GoogleService-Info.plist in Resources */,
 				46E36530244061FE00A570C5 /* Assets.xcassets in Resources */,
 				46E3652E244061F800A570C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CB8C10BD569A0618585427B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UniversalLinks2/Pods-UniversalLinks2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UniversalLinks2/Pods-UniversalLinks2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UniversalLinks2/Pods-UniversalLinks2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F30078E1093695A8983E4A08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UniversalLinks2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46E3651F244061F800A570C5 /* Sources */ = {
@@ -284,6 +357,7 @@
 		};
 		46E36538244061FE00A570C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9AC0B590E37D6A7645742A8 /* Pods-UniversalLinks2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = UniversalLinks2/UniversalLinks2.entitlements;
@@ -305,6 +379,7 @@
 		};
 		46E36539244061FE00A570C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F582908CE5CCC4196546E637 /* Pods-UniversalLinks2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = UniversalLinks2/UniversalLinks2.entitlements;
