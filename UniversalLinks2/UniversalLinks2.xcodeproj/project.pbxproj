@@ -49,7 +49,6 @@
 				8B11D002BB4DD92AE3D5C932 /* Pods-UniversalLinks2.debug.xcconfig */,
 				B6405E367351229D30641DC8 /* Pods-UniversalLinks2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -359,6 +358,7 @@
 				CODE_SIGN_ENTITLEMENTS = UniversalLinks2/UniversalLinks2.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = H899557VXN;
 				INFOPLIST_FILE = UniversalLinks2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -370,7 +370,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -382,6 +382,7 @@
 				CODE_SIGN_ENTITLEMENTS = UniversalLinks2/UniversalLinks2.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = H899557VXN;
 				INFOPLIST_FILE = UniversalLinks2/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -393,7 +394,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
