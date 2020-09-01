@@ -5,6 +5,7 @@
 	<key>com.apple.developer.associated-domains</key>
 	<array>
 		<string>applinks:stormy-cove-17198.herokuapp.com</string>
+		<string>applinks:devssuntest.page.link</string>
 	</array>
 </dict>
 </plist>

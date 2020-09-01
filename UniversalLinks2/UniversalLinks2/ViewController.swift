@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var URLLabel: UILabel!
+    @IBOutlet weak var isDynamicLink: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()

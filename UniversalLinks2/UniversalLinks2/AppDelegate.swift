@@ -12,7 +12,7 @@ import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    // iOS 9 이상 버전에 앱을 이미 설치했다면 application:continueUserActivity:restorationHandler: 메서드에서 범용 링크로 수신된 링크를 처리합니다.
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         print("AppDelegate - continue userActivity")
         guard userActivity.activityType == NSUserActivityTypeBrowsingWeb, let url = userActivity.webpageURL else {
@@ -33,34 +34,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("path : \(path)")
         }
         
-        guard let rootViewController = UIWindow().rootViewController else {
-            return false
-        }
-        
-        guard let viewController = rootViewController as? ViewController else {
+        guard let rootViewController = window?.rootViewController, let viewController = rootViewController as? ViewController else {
             return false
         }
         
         viewController.URLLabel.text = url.absoluteString
-        return false
+        
+        // Firebase Dynamic Link
+        let handled = DynamicLinks.dynamicLinks().handleUniversalLink(url) { (dynamiclink, error) in
+            guard let url = dynamiclink?.url else {
+                return
+            }
+            
+            print("dynamic link \(url.absoluteString)")
+        }
+        
+        return handled
     }
 
-    
-    
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    // 메서드에서 앱의 커스텀 URL 스키마를 통해 수신된 링크를 처리합니다. 이 메서드는 iOS 8 이하의 경우에는 앱이 링크를 수신할 때, 그리고 iOS 버전에 상관없이 앱을 설치한 후 처음으로 열었을 때 호출됩니다.
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        print("open url 함수 실행 \(url)")
+        if let dynamicLink = DynamicLinks.dynamicLinks().dynamicLink(fromCustomSchemeURL: url) {
+            
+            guard dynamicLink.url?.description != nil && dynamicLink.url != nil else {
+                return false
+            }
+            if let scheme = url.scheme {
+                if scheme == "https" {
+                    //딥링크 구현
+                    print("딥링크")
+                    guard let rootViewController = window?.rootViewController, let viewController = rootViewController as? ViewController else {
+                        return false
+                    }
+                    
+                    viewController.isDynamicLink.text = "open url 함수 실행 \(url.absoluteString)"
+                }
+            }
+             
+        }
+        return true
     }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
-
-
 }
 
